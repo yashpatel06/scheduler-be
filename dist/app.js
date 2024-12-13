@@ -18,6 +18,7 @@ app.use((0, cors_1.default)({ origin: "*" }));
 // Routes
 app.use("/api", routes_1.default);
 app.get("/", (req, res) => {
+    console.log("hello");
     res.send("This is backend-host!");
 });
 app.listen(PORT, () => {

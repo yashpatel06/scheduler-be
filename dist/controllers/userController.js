@@ -85,7 +85,7 @@ const userLogin = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     return res.status(200).send({
         success: true,
         message: "Success",
-        data: { token, role: rest === null || rest === void 0 ? void 0 : rest.role },
+        data: Object.assign({ token }, rest),
     });
 });
 exports.userLogin = userLogin;

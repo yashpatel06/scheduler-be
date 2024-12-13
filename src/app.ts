@@ -18,6 +18,7 @@ app.use(cors({ origin: "*" }));
 app.use("/api", appRoute);
 
 app.get("/", (req, res) => {
+  console.log("hello");
   res.send("This is backend-host!");
 });
 

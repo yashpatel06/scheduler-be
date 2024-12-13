@@ -71,6 +71,6 @@ export const userLogin = async (req: Request, res: Response) => {
   return res.status(200).send({
     success: true,
     message: "Success",
-    data: { token, role: rest?.role },
+    data: { token, ...rest },
   });
 };
