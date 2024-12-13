@@ -19,7 +19,7 @@ app.use("/api", appRoute);
 
 app.get("/", (req, res) => {
   console.log("hello");
-  res.send("This is backend-host!");
+  res.send("Backend is hosted on this server for sometime !");
 });
 
 app.listen(PORT, () => {

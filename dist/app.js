@@ -19,7 +19,7 @@ app.use((0, cors_1.default)({ origin: "*" }));
 app.use("/api", routes_1.default);
 app.get("/", (req, res) => {
     console.log("hello");
-    res.send("This is backend-host!");
+    res.send("Backend is hosted on this server for sometime !");
 });
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
